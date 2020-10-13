@@ -1,0 +1,14 @@
+{
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "nodemon": "^2.0.4"
+    },
+    "scripts": {
+        "start:build": "tsc -w",
+        "start:run": "nodemon build",
+        "start": "concurrently yarn:start:*"
+    },
+    "dependencies": {
+        "@types/node": "^14.11.2"
+    }
+}
